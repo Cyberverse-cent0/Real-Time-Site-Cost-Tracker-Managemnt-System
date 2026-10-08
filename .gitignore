@@ -1,18 +1,37 @@
-*.o
-*.so
-*.a
-*.dll
-*.exe
+# ---- Python ----
+__pycache__/
 *.pyc
 *.pyo
-*.class
-*.jar
+*.egg-info/
+.eggs/
+
+# ---- Virtual environments ----
+venv/
+.venv/
+bin/venv/
+
+# ---- Local data / databases ----
+data/
+*.db
+*.sqlite3
+
+# ---- C build artifacts ----
+*.o
+*.a
+*.so
+*.dll
+*.exe
+build/
+dist/
+*.out
+
+# ---- Logs / temp / editor swap ----
 *.log
 *.tmp
 *.swp
 *.bak
-*.DS_Store
-*.idea/
 
-build/  
-dist/
+# ---- IDE / OS ----
+.idea/
+.vscode/
+.DS_Store
